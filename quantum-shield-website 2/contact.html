@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Quantum Shield Consulting</title>
+<meta name="description" content="Contact Quantum Shield Consulting to discuss your CMMC 2.0 readiness needs. Reach us by phone or request a consultation.">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-container">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.png" alt="Quantum Shield Consulting" class="brand-logo">
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.getElementById('nav-menu').classList.toggle('open')">☰</button>
+    <nav>
+      <ul id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="about-hero">
+    <div class="container">
+      <span class="eyebrow fade-up">Get In Touch</span>
+      <h1 class="fade-up delay-1" style="max-width: 900px;">
+        Let's build your <span style="color: var(--accent);">CMMC 2.0 roadmap</span>.
+      </h1>
+      <p class="fade-up delay-2" style="max-width: 720px; margin-top: 1.5rem; font-size: 1.15rem;">
+        Every engagement starts with a conversation. Tell us about your organization,
+        your contracts, and your timeline — we'll respond within one business day.
+      </p>
+    </div>
+  </section>
+
+  <section style="padding-top: 1rem;">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Contact info -->
+        <div class="contact-info-block">
+          <a href="tel:+18305103018" class="contact-method" style="text-decoration: none;">
+            <div class="contact-icon">☎</div>
+            <div>
+              <h4>Phone</h4>
+              <p>(830) 510-3018</p>
+            </div>
+          </a>
+
+          <div class="contact-method">
+            <div class="contact-icon">⌖</div>
+            <div>
+              <h4>Service Area</h4>
+              <p>Remote engagements nationwide</p>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="contact-icon">◈</div>
+            <div>
+              <h4>Credentials</h4>
+              <p>Cyber-AB Registered Practitioner</p>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="contact-icon">⏱</div>
+            <div>
+              <h4>Response Time</h4>
+              <p>Within one business day</p>
+            </div>
+          </div>
+
+          <div style="background: var(--bg-panel); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 1.75rem; margin-top: 1rem;">
+            <h4 style="font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 1rem;">What to have ready</h4>
+            <ul style="list-style: none;">
+              <li style="padding: 0.4rem 0 0.4rem 1.5rem; position: relative; color: var(--text-secondary);">
+                <span style="position: absolute; left: 0; color: var(--accent);">▸</span>
+                Your required CMMC level (1, 2, or 3)
+              </li>
+              <li style="padding: 0.4rem 0 0.4rem 1.5rem; position: relative; color: var(--text-secondary);">
+                <span style="position: absolute; left: 0; color: var(--accent);">▸</span>
+                Approximate headcount and user count
+              </li>
+              <li style="padding: 0.4rem 0 0.4rem 1.5rem; position: relative; color: var(--text-secondary);">
+                <span style="position: absolute; left: 0; color: var(--accent);">▸</span>
+                Contract timeline or assessment target date
+              </li>
+              <li style="padding: 0.4rem 0 0.4rem 1.5rem; position: relative; color: var(--text-secondary);">
+                <span style="position: absolute; left: 0; color: var(--accent);">▸</span>
+                Any existing documentation (SSP, POA&M, policies)
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contact form -->
+        <div class="contact-form">
+          <h2 style="font-size: 1.4rem; margin-bottom: 0.5rem;">Request a Consultation</h2>
+          <p style="font-size: 0.95rem; margin-bottom: 2rem;">Fill out the form and we'll be in touch.</p>
+
+          <form id="contactForm" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+
+            <div class="form-group">
+              <label for="level">Target CMMC Level</label>
+              <select id="level" name="level">
+                <option value="">Not sure yet</option>
+                <option value="1">Level 1 — Foundational</option>
+                <option value="2">Level 2 — Advanced</option>
+                <option value="3">Level 3 — Expert</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="service">Service of Interest</label>
+              <select id="service" name="service">
+                <option value="">Select a service</option>
+                <option value="gap">Gap Assessment</option>
+                <option value="ssp">SSP Authoring</option>
+                <option value="poam">POA&M Development</option>
+                <option value="policy">Policy Development</option>
+                <option value="mock">Pre-Assessment Mock</option>
+                <option value="retainer">Advisory Retainer</option>
+                <option value="hourly">Hourly Consulting</option>
+                <option value="other">Other / Not Sure</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">How can we help?</label>
+              <textarea id="message" name="message" placeholder="Tell us about your situation, timeline, and any specific questions..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+            <p id="formStatus" style="margin-top: 1rem; text-align: center; font-size: 0.9rem; display: none;"></p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <img src="assets/logo.png" alt="Quantum Shield Consulting" class="footer-logo">
+        </a>
+        <p>Registered Practitioner advisory services for CMMC 2.0 readiness and Defense Industrial Base compliance.</p>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+18305103018">(830) 510-3018</a></li>
+          <li><a href="contact.html">Request Consultation</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Quantum Shield Consulting &nbsp;·&nbsp; All Rights Reserved
+    </div>
+  </div>
+</footer>
+
+<script>
+function handleSubmit(e) {
+  e.preventDefault();
+  const status = document.getElementById('formStatus');
+  status.style.display = 'block';
+  status.style.color = 'var(--accent)';
+  status.textContent = 'Thank you — form captured. (Connect to an email service like Formspree or Cloudflare Pages Functions to enable delivery.)';
+  document.getElementById('contactForm').reset();
+}
+</script>
+
+</body>
+</html>
