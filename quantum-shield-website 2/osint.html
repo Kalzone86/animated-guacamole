@@ -1,1 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OSINT Assessment — Quantum Shield Consulting</title>
+<meta name="description" content="Executive Open Source Intelligence Assessments. Know your digital exposure before adversaries do. Spear phishing defense through passive OSINT profiling for C-suite and senior leadership.">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
+<header class="site-header">
+  <div class="nav-container">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.png" alt="Quantum Shield Consulting" class="brand-logo">
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.getElementById('nav-menu').classList.toggle('open')">☰</button>
+    <nav>
+      <ul id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="osint.html" class="active">OSINT</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="about-hero">
+    <div class="container">
+      <span class="eyebrow fade-up">Executive Digital Risk</span>
+      <h1 class="fade-up delay-1" style="max-width: 960px;">
+        Know your exposure before
+        <span style="color: var(--accent);">your adversaries do.</span>
+      </h1>
+      <p class="fade-up delay-2" style="max-width: 740px; margin-top: 1.5rem; font-size: 1.15rem;">
+        Executives are the highest-value targets for spear phishing and social engineering.
+        A passive Open Source Intelligence Assessment maps everything about you that is
+        publicly visible — and shows you how adversaries see you before they attack.
+      </p>
+      <div class="hero-ctas fade-up delay-3" style="margin-top: 2rem;">
+        <a href="contact.html" class="btn btn-primary">Schedule Your Assessment</a>
+        <a href="#what-we-assess" class="btn btn-outline">See What We Cover</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREDENTIAL BAR -->
+  <div class="credential-bar">
+    <div class="container">
+      <div class="credential-item">C-Suite & VP Focused</div>
+      <div class="credential-item">Spear Phishing Defense</div>
+      <div class="credential-item">Passive Assessment Only</div>
+      <div class="credential-item">Confidential Written Report</div>
+    </div>
+  </div>
+
+  <!-- THE THREAT -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">The Threat Landscape</span>
+        <h2>Executives are the target. Your public profile is the weapon.</h2>
+        <p>
+          Spear phishing campaigns targeting senior leadership are not random — they are
+          researched, personalized, and built from information that is already publicly
+          available. Before an adversary sends a single email, they have mapped your
+          digital footprint, identified your relationships, and crafted a message
+          designed specifically for you.
+        </p>
+      </div>
+
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-icon">◈</div>
+          <h3>Authority & Access</h3>
+          <p>Executives hold signing authority, wire transfer approval, and access to sensitive systems. A successful spear phish against leadership can compromise an entire organization in a single click.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">◉</div>
+          <h3>Public Footprint</h3>
+          <p>LinkedIn profiles, conference bios, press releases, public records, and social media collectively build a detailed picture of your life, schedule, relationships, and habits — all without a single intrusion.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">◆</div>
+          <h3>Social Engineering Risk</h3>
+          <p>The more publicly visible you are, the more material an attacker has. Information you consider harmless — a travel post, a board affiliation, a family member's name — becomes a tool for manipulation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE ASSESS -->
+  <section id="what-we-assess" style="background: linear-gradient(180deg, rgba(7,12,22,0.4), transparent);">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Assessment Scope</span>
+        <h2>Every publicly accessible layer of your digital identity.</h2>
+        <p>
+          Using only passive, non-intrusive techniques and publicly available sources,
+          we build the same profile an adversary would construct before targeting you.
+        </p>
+      </div>
+
+      <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+
+        <div class="card">
+          <div class="card-icon">01</div>
+          <h3>Social Media Exposure</h3>
+          <p>Public-facing profiles across LinkedIn, X, Facebook, Instagram, and other platforms. We identify what personal, professional, and location data is visible and how it can be leveraged.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">02</div>
+          <h3>Data Broker Records</h3>
+          <p>People-search sites and data aggregators publish home addresses, phone numbers, relatives, and associated individuals. We document what these sources reveal about you.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">03</div>
+          <h3>Leaked Credentials</h3>
+          <p>Email addresses and usernames associated with you are checked against known breach databases. Compromised credentials are a primary entry point for account takeover and targeted attacks.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">04</div>
+          <h3>Public Records</h3>
+          <p>Property ownership, business filings, court records, voter registration, and other government databases that expose personal details, assets, and affiliations.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">05</div>
+          <h3>News & Media Coverage</h3>
+          <p>Press releases, conference appearances, interviews, and articles that reveal your business decisions, travel patterns, organizational relationships, and public positions.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">06</div>
+          <h3>Corporate Affiliations</h3>
+          <p>Board memberships, advisory roles, subsidiary connections, and organizational charts that expose your professional network and decision-making authority.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">07</div>
+          <h3>Personal Connections</h3>
+          <p>Publicly visible family members, associates, and personal relationships that adversaries can exploit to build trust, context, or leverage in a targeted attack.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DELIVERABLE -->
+  <section>
+    <div class="container">
+      <div class="feature-row">
+        <div>
+          <span class="eyebrow">What You Receive</span>
+          <h2>A complete written security profile — yours to keep.</h2>
+          <p style="margin: 1.25rem 0;">
+            Every assessment concludes with a detailed, confidential written report.
+            This is not a generic checklist. It is a personalized analysis of your
+            specific public exposure, the attack vectors it creates, and a clear
+            path to reducing your risk.
+          </p>
+
+          <div style="margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+            <div class="contact-method" style="padding: 1.25rem;">
+              <div class="contact-icon" style="font-size: 0.9rem; font-family: var(--font-display); font-weight: 700;">01</div>
+              <div>
+                <h4 style="font-family: var(--font-display); font-size: 0.95rem; color: var(--text-primary); margin-bottom: 0.25rem;">Attack Surface Map</h4>
+                <p style="font-size: 0.95rem;">A full inventory of your publicly exposed data points, ranked by risk severity and exploitability.</p>
+              </div>
+            </div>
+            <div class="contact-method" style="padding: 1.25rem;">
+              <div class="contact-icon" style="font-size: 0.9rem; font-family: var(--font-display); font-weight: 700;">02</div>
+              <div>
+                <h4 style="font-family: var(--font-display); font-size: 0.95rem; color: var(--text-primary); margin-bottom: 0.25rem;">Attack Vector Analysis</h4>
+                <p style="font-size: 0.95rem;">Specific scenarios showing how an adversary could weaponize your public information in a spear phishing or social engineering campaign.</p>
+              </div>
+            </div>
+            <div class="contact-method" style="padding: 1.25rem;">
+              <div class="contact-icon" style="font-size: 0.9rem; font-family: var(--font-display); font-weight: 700;">03</div>
+              <div>
+                <h4 style="font-family: var(--font-display); font-size: 0.95rem; color: var(--text-primary); margin-bottom: 0.25rem;">Remediation Guidance</h4>
+                <p style="font-size: 0.95rem;">Prioritized, actionable steps you can take to reduce your exposure — including how to address data broker records and tighten your public profile.</p>
+              </div>
+            </div>
+            <div class="contact-method" style="padding: 1.25rem;">
+              <div class="contact-icon" style="font-size: 0.9rem; font-family: var(--font-display); font-weight: 700;">04</div>
+              <div>
+                <h4 style="font-family: var(--font-display); font-size: 0.95rem; color: var(--text-primary); margin-bottom: 0.25rem;">Risk Acceptance Guidance</h4>
+                <p style="font-size: 0.95rem;">Not all exposure can be eliminated. We identify what residual risk you will need to accept and what that means for your day-to-day security posture.</p>
+              </div>
+            </div>
+            <div class="contact-method" style="padding: 1.25rem;">
+              <div class="contact-icon" style="font-size: 0.9rem; font-family: var(--font-display); font-weight: 700;">05</div>
+              <div>
+                <h4 style="font-family: var(--font-display); font-size: 0.95rem; color: var(--text-primary); margin-bottom: 0.25rem;">Awareness & Training Recommendations</h4>
+                <p style="font-size: 0.95rem;">Targeted guidance on recognizing spear phishing attempts, verifying unusual requests, and building personal security habits that match your risk profile.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-visual orbital-container">
+          <svg class="orbital-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#5ee3ff"/>
+                <stop offset="100%" stop-color="#1e6fa8"/>
+              </linearGradient>
+              <radialGradient id="centerGlow2">
+                <stop offset="0%" stop-color="#5ee3ff" stop-opacity="0.9"/>
+                <stop offset="100%" stop-color="#5ee3ff" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <g class="cross-lines" stroke="#5ee3ff" stroke-width="0.5" opacity="0.5">
+              <line x1="100" y1="20" x2="100" y2="180"/>
+              <line x1="20" y1="100" x2="180" y2="100"/>
+              <line x1="44" y1="44" x2="156" y2="156"/>
+              <line x1="156" y1="44" x2="44" y2="156"/>
+            </g>
+            <g class="ring ring-outer">
+              <circle cx="100" cy="100" r="80" fill="none" stroke="url(#g2)" stroke-width="1" opacity="0.4"/>
+              <circle class="dot dot-1" cx="100" cy="20" r="3" fill="#5ee3ff"/>
+              <circle class="dot dot-2" cx="180" cy="100" r="3" fill="#5ee3ff"/>
+              <circle class="dot dot-3" cx="100" cy="180" r="3" fill="#5ee3ff"/>
+              <circle class="dot dot-4" cx="20" cy="100" r="3" fill="#5ee3ff"/>
+            </g>
+            <g class="ring ring-middle">
+              <circle cx="100" cy="100" r="60" fill="none" stroke="url(#g2)" stroke-width="1" opacity="0.6"/>
+              <circle class="dot dot-5" cx="156" cy="44" r="2.5" fill="#5ee3ff"/>
+              <circle class="dot dot-6" cx="156" cy="156" r="2.5" fill="#5ee3ff"/>
+              <circle class="dot dot-7" cx="44" cy="156" r="2.5" fill="#5ee3ff"/>
+              <circle class="dot dot-8" cx="44" cy="44" r="2.5" fill="#5ee3ff"/>
+            </g>
+            <g class="ring ring-inner">
+              <circle cx="100" cy="100" r="40" fill="none" stroke="url(#g2)" stroke-width="1.5" opacity="0.8"/>
+            </g>
+            <circle class="center-glow" cx="100" cy="100" r="18" fill="url(#centerGlow2)"/>
+            <circle class="center-dot" cx="100" cy="100" r="4" fill="#5ee3ff"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPORTANT NOTE -->
+  <section style="background: linear-gradient(180deg, rgba(7,12,22,0.4), transparent); padding: 4rem 0;">
+    <div class="container">
+      <div style="max-width: 820px; margin: 0 auto; text-align: center;">
+        <span class="eyebrow">Scope of Service</span>
+        <h2 style="margin-bottom: 1.25rem;">Assessment and guidance — not data removal.</h2>
+        <p style="font-size: 1.05rem;">
+          This is a passive intelligence assessment. We will not remove your data from third-party
+          sites or platforms on your behalf — that falls outside the scope of this service.
+          What we provide is a precise picture of what exists, where it lives, and a
+          prioritized roadmap for how <strong style="color: var(--text-primary);">you</strong> can
+          address it. You leave with the knowledge and the plan.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENGAGEMENT OPTIONS -->
+  <section>
+    <div class="container">
+      <div class="section-header" style="text-align: center; max-width: 720px; margin: 0 auto 3rem;">
+        <span class="eyebrow">Engagement Options</span>
+        <h2>One-time assessment or ongoing quarterly monitoring.</h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 1.5rem; max-width: 900px; margin: 0 auto;">
+
+        <div class="service-block" style="margin-bottom: 0;">
+          <div class="service-block-header">
+            <div>
+              <span class="service-tag">Single Engagement</span>
+              <h3>One-Time OSINT Assessment</h3>
+            </div>
+            <div class="service-price">
+              Inquire for Pricing
+              <small>Flat fee</small>
+            </div>
+          </div>
+          <p style="margin-bottom: 1.25rem;">
+            A comprehensive, point-in-time assessment of your public digital footprint.
+            Ideal for executives who want to understand their current exposure and receive
+            a full report with remediation and risk guidance.
+          </p>
+          <ul>
+            <li>Full passive OSINT assessment across all covered sources</li>
+            <li>Detailed confidential written report</li>
+            <li>Attack surface map and vector analysis</li>
+            <li>Remediation roadmap and risk acceptance guidance</li>
+            <li>Awareness and training recommendations</li>
+          </ul>
+        </div>
+
+        <div class="service-block" style="margin-bottom: 0; border-color: var(--border-strong);">
+          <div class="service-block-header">
+            <div>
+              <span class="service-tag">Ongoing Partnership</span>
+              <h3>Quarterly Monitoring Retainer</h3>
+            </div>
+            <div class="service-price">
+              Inquire for Pricing
+              <small>Per quarter</small>
+            </div>
+          </div>
+          <p style="margin-bottom: 1.25rem;">
+            Your public exposure changes as your career, company, and life evolve.
+            Quarterly reassessments track new exposure, verify remediation progress,
+            and keep your risk profile current year-round.
+          </p>
+          <ul>
+            <li>Full reassessment every quarter</li>
+            <li>Updated report with delta from prior assessment</li>
+            <li>Remediation progress tracking</li>
+            <li>New breach and data broker monitoring</li>
+            <li>Direct access for questions between assessments</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <span class="eyebrow">Start Here</span>
+      <h2>Request your Executive OSINT Assessment.</h2>
+      <p>
+        Engagements are conducted individually and handled with strict confidentiality.
+        Reach out to discuss scope and scheduling.
+      </p>
+      <a href="contact.html" class="btn btn-primary">Schedule Your Assessment</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <img src="assets/logo.png" alt="Quantum Shield Consulting" class="footer-logo">
+        </a>
+        <p>Registered Practitioner advisory services for CMMC 2.0 readiness, Defense Industrial Base compliance, and Executive OSINT assessments.</p>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="osint.html">OSINT</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+18305103018">(830) 510-3018</a></li>
+          <li><a href="contact.html">Request Consultation</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Quantum Shield Consulting &nbsp;·&nbsp; All Rights Reserved
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.orbital-container').forEach(container => {
+    const svg = container.querySelector('.orbital-svg');
+    if (!svg) return;
+    container.addEventListener('mousemove', (e) => {
+      const rect = container.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const rotateX = ((y - rect.height / 2) / (rect.height / 2)) * -12;
+      const rotateY = ((x - rect.width / 2) / (rect.width / 2)) * 12;
+      svg.style.transform = `perspective(900px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+    });
+    container.addEventListener('mouseleave', () => {
+      svg.style.transform = 'perspective(900px) rotateX(0deg) rotateY(0deg) scale(1)';
+    });
+  });
+</script>
+
+</body>
+</html>
