@@ -18,12 +18,13 @@
     <a href="index.html" class="brand">
       <img src="assets/logo.png" alt="Quantum Shield Consulting" class="brand-logo">
     </a>
-    <button type="submit" id="submitBtn" class="btn btn-primary" style="width: 100%;">Send Message</button>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.getElementById('nav-menu').classList.toggle('open')">&#9776;</button>
     <nav>
       <ul id="nav-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
+        <li><a href="osint.html">OSINT</a></li>
         <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
     </nav>
@@ -40,7 +41,7 @@
       </h1>
       <p class="fade-up delay-2" style="max-width: 720px; margin-top: 1.5rem; font-size: 1.15rem;">
         Every engagement starts with a conversation. Tell us about your organization,
-        your contracts, and your timeline — we'll respond within one business day.
+        your contracts, and your timeline &mdash; we'll respond within one business day.
       </p>
     </div>
   </section>
@@ -49,10 +50,9 @@
     <div class="container">
       <div class="contact-grid">
 
-        <!-- Contact info -->
         <div class="contact-info-block">
           <a href="tel:+18305103018" class="contact-method" style="text-decoration: none;">
-            <div class="contact-icon">☎</div>
+            <div class="contact-icon">&#9742;</div>
             <div>
               <h4>Phone</h4>
               <p>(830) 510-3018</p>
@@ -60,7 +60,7 @@
           </a>
 
           <div class="contact-method">
-            <div class="contact-icon">⌖</div>
+            <div class="contact-icon">&#8982;</div>
             <div>
               <h4>Service Area</h4>
               <p>Remote engagements nationwide</p>
@@ -68,7 +68,7 @@
           </div>
 
           <div class="contact-method">
-            <div class="contact-icon">◈</div>
+            <div class="contact-icon">&#9672;</div>
             <div>
               <h4>Credentials</h4>
               <p>Cyber-AB Registered Practitioner</p>
@@ -76,7 +76,7 @@
           </div>
 
           <div class="contact-method">
-            <div class="contact-icon">⏱</div>
+            <div class="contact-icon">&#9201;</div>
             <div>
               <h4>Response Time</h4>
               <p>Within one business day</p>
@@ -87,26 +87,25 @@
             <h4 style="font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 1rem;">What to have ready</h4>
             <ul style="list-style: none;">
               <li style="padding: 0.4rem 0 0.4rem 1.5rem; position: relative; color: var(--text-secondary);">
-                <span style="position: absolute; left: 0; color: var(--accent);">▸</span>
+                <span style="position: absolute; left: 0; color: var(--accent);">&#9656;</span>
                 Your required CMMC level (1, 2, or 3)
               </li>
               <li style="padding: 0.4rem 0 0.4rem 1.5rem; position: relative; color: var(--text-secondary);">
-                <span style="position: absolute; left: 0; color: var(--accent);">▸</span>
+                <span style="position: absolute; left: 0; color: var(--accent);">&#9656;</span>
                 Approximate headcount and user count
               </li>
               <li style="padding: 0.4rem 0 0.4rem 1.5rem; position: relative; color: var(--text-secondary);">
-                <span style="position: absolute; left: 0; color: var(--accent);">▸</span>
+                <span style="position: absolute; left: 0; color: var(--accent);">&#9656;</span>
                 Contract timeline or assessment target date
               </li>
               <li style="padding: 0.4rem 0 0.4rem 1.5rem; position: relative; color: var(--text-secondary);">
-                <span style="position: absolute; left: 0; color: var(--accent);">▸</span>
-                Any existing documentation (SSP, POA&M, policies)
+                <span style="position: absolute; left: 0; color: var(--accent);">&#9656;</span>
+                Any existing documentation (SSP, POA&amp;M, policies)
               </li>
             </ul>
           </div>
         </div>
 
-        <!-- Contact form -->
         <div class="contact-form">
           <h2 style="font-size: 1.4rem; margin-bottom: 0.5rem;">Request a Consultation</h2>
           <p style="font-size: 0.95rem; margin-bottom: 2rem;">Fill out the form and we'll be in touch.</p>
@@ -116,53 +115,48 @@
               <label for="name">Full Name</label>
               <input type="text" id="name" name="name" required>
             </div>
-
             <div class="form-group">
               <label for="company">Company</label>
               <input type="text" id="company" name="company" required>
             </div>
-
             <div class="form-group">
               <label for="email">Email Address</label>
               <input type="email" id="email" name="email" required>
             </div>
-
             <div class="form-group">
               <label for="phone">Phone Number</label>
               <input type="tel" id="phone" name="phone">
             </div>
-
             <div class="form-group">
               <label for="level">Target CMMC Level</label>
               <select id="level" name="level">
                 <option value="">Not sure yet</option>
-                <option value="1">Level 1 — Foundational</option>
-                <option value="2">Level 2 — Advanced</option>
-                <option value="3">Level 3 — Expert</option>
+                <option value="1">Level 1 &mdash; Foundational</option>
+                <option value="2">Level 2 &mdash; Advanced</option>
+                <option value="3">Level 3 &mdash; Expert</option>
               </select>
             </div>
-
             <div class="form-group">
               <label for="service">Service of Interest</label>
               <select id="service" name="service">
                 <option value="">Select a service</option>
                 <option value="gap">Gap Assessment</option>
                 <option value="ssp">SSP Authoring</option>
-                <option value="poam">POA&M Development</option>
+                <option value="poam">POA&amp;M Development</option>
                 <option value="policy">Policy Development</option>
                 <option value="mock">Pre-Assessment Mock</option>
                 <option value="retainer">Advisory Retainer</option>
                 <option value="hourly">Hourly Consulting</option>
+                <option value="osint-single">OSINT Assessment &mdash; Single</option>
+                <option value="osint-retainer">OSINT Assessment &mdash; Quarterly Retainer</option>
                 <option value="other">Other / Not Sure</option>
               </select>
             </div>
-
             <div class="form-group">
               <label for="message">How can we help?</label>
               <textarea id="message" name="message" placeholder="Tell us about your situation, timeline, and any specific questions..." required></textarea>
             </div>
-
-            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+            <button type="submit" id="submitBtn" class="btn btn-primary" style="width: 100%;">Send Message</button>
             <p id="formStatus" style="margin-top: 1rem; text-align: center; font-size: 0.9rem; display: none;"></p>
           </form>
         </div>
@@ -188,6 +182,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
+          <li><a href="osint.html">OSINT</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
@@ -200,7 +195,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      © 2026 Quantum Shield Consulting &nbsp;·&nbsp; All Rights Reserved
+      &copy; 2026 Quantum Shield Consulting &nbsp;&middot;&nbsp; All Rights Reserved
     </div>
   </div>
 </footer>
@@ -226,7 +221,7 @@ async function handleSubmit(e) {
     if (res.ok) {
       status.style.display = 'block';
       status.style.color = 'var(--accent)';
-      status.textContent = "Message sent — we'll be in touch within one business day.";
+      status.textContent = "Message sent &mdash; we'll be in touch within one business day.";
       form.reset();
     } else {
       const data = await res.json();
@@ -243,7 +238,7 @@ async function handleSubmit(e) {
     btn.textContent = 'Send Message';
   }
 }
-</script>>
+</script>
 
 </body>
 </html>
