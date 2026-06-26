@@ -40,6 +40,50 @@ const SOUNDS = [
   { id: 'trex-roar-alt',   label: 'T-Rex Alt Roar',        emoji: '🦖', cat: 'dino',    file: 'trex-roar-alt.mp3',       slug: '' },
   { id: 'trex-roar-3',     label: 'T-Rex Roar 3',          emoji: '🦖', cat: 'dino',    file: 'trex-roar-3.mp3',         slug: '' },
   { id: 'godzilla',        label: 'Godzilla Roar',         emoji: '👾', cat: 'dino',    file: 'godzilla-roar.mp3',       slug: '' },
+
+  // Rex roars — each one a different moment
+  { id: 'rex-here-she-comes',   label: 'Rex: HERE SHE COMES!',  emoji: '🦖', cat: 'dino', file: 'trex-here-she-comes.mp3' },
+  { id: 'rex-gate-crasher',     label: 'Rex: Gate Crasher',      emoji: '🦖', cat: 'dino', file: 'trex-gate-crasher.mp3' },
+  { id: 'rex-the-breakout',     label: 'Rex: The Breakout',      emoji: '🦖', cat: 'dino', file: 'trex-the-breakout.mp3' },
+  { id: 'rex-warning-shot',     label: 'Rex: Warning Shot',      emoji: '🦖', cat: 'dino', file: 'trex-warning-shot.mp3' },
+  { id: 'rex-paddock-escape',   label: 'Rex: Paddock Escape',    emoji: '🦖', cat: 'dino', file: 'trex-paddock-escape.mp3' },
+  { id: 'rex-short-and-loud',   label: 'Rex: Short & LOUD',      emoji: '🦖', cat: 'dino', file: 'trex-short-and-loud.mp3' },
+  { id: 'rex-quick-snap',       label: 'Rex: Quick Snap',        emoji: '🦖', cat: 'dino', file: 'trex-quick-snap.mp3' },
+  { id: 'rex-dont-move',        label: "Rex: Don't Move",        emoji: '🦖', cat: 'dino', file: 'trex-dont-move.mp3' },
+  { id: 'rex-she-found-you',    label: 'Rex: She Found You',     emoji: '🦖', cat: 'dino', file: 'trex-she-found-you.mp3' },
+  { id: 'rex-sniff-and-roar',   label: 'Rex: Sniff & Roar',      emoji: '🦖', cat: 'dino', file: 'trex-sniff-and-roar.mp3' },
+  { id: 'rex-jungle-thunder',   label: 'Rex: Jungle Thunder',    emoji: '🦖', cat: 'dino', file: 'trex-jungle-thunder.mp3' },
+  { id: 'rex-big-entrance',     label: 'Rex: Big Entrance',      emoji: '🦖', cat: 'dino', file: 'trex-big-entrance.mp3' },
+  { id: 'rex-feeding-frenzy',   label: 'Rex: Feeding Frenzy',    emoji: '🦖', cat: 'dino', file: 'trex-feeding-frenzy.mp3' },
+  { id: 'rex-night-patrol',     label: 'Rex: Night Patrol',      emoji: '🦖', cat: 'dino', file: 'trex-night-patrol.mp3' },
+  { id: 'rex-i-smell-you',      label: 'Rex: I Smell You',       emoji: '🦖', cat: 'dino', file: 'trex-i-smell-you.mp3' },
+  { id: 'rex-roooaaarrr',       label: 'Rex: ROOOAAARRR!',       emoji: '🦖', cat: 'dino', file: 'trex-roooaaarrr.mp3' },
+  { id: 'rex-stomp-walk',       label: 'Rex: Stomp Walk',        emoji: '🦖', cat: 'dino', file: 'trex-stomp-walk.mp3' },
+  { id: 'rex-headlight-stare',  label: 'Rex: Headlight Stare',   emoji: '🦖', cat: 'dino', file: 'trex-headlight-stare.mp3' },
+  { id: 'rex-river-chase',      label: 'Rex: River Chase',       emoji: '🦖', cat: 'dino', file: 'trex-river-chase.mp3' },
+  { id: 'rex-victory-lap',      label: 'Rex: Victory Lap',       emoji: '🦖', cat: 'dino', file: 'trex-victory-lap.mp3' },
+  { id: 'rex-king-of-the-park', label: 'Rex: King of the Park',  emoji: '🦖', cat: 'dino', file: 'trex-king-of-the-park.mp3' },
+  { id: 'rex-tour-bus-terror',  label: 'Rex: Tour Bus Terror',   emoji: '🦖', cat: 'dino', file: 'trex-tour-bus-terror.mp3' },
+  { id: 'rex-sunrise-roar',     label: 'Rex: Sunrise Roar',      emoji: '🦖', cat: 'dino', file: 'trex-sunrise-roar.mp3' },
+  { id: 'rex-last-roar',        label: 'Rex: Last Roar',         emoji: '🦖', cat: 'dino', file: 'trex-last-roar.mp3' },
+  { id: 'rex-saves-the-day',    label: 'Rex: Saves the Day',     emoji: '🦖', cat: 'dino', file: 'trex-saves-the-day.mp3' },
+
+  // Rex growls — sneaky & stalking
+  { id: 'rex-low-rumble',       label: 'Rex: Low Rumble',        emoji: '😤', cat: 'dino', file: 'trex-low-rumble.mp3' },
+  { id: 'rex-deep-snarl',       label: 'Rex: Deep Snarl',        emoji: '😤', cat: 'dino', file: 'trex-deep-snarl.mp3' },
+  { id: 'rex-getting-closer',   label: 'Rex: Getting Closer',    emoji: '😤', cat: 'dino', file: 'trex-getting-closer.mp3' },
+  { id: 'rex-behind-the-trees', label: 'Rex: Behind the Trees',  emoji: '😤', cat: 'dino', file: 'trex-behind-the-trees.mp3' },
+  { id: 'rex-sniffing-around',  label: 'Rex: Sniffing Around',   emoji: '😤', cat: 'dino', file: 'trex-sniffing-around.mp3' },
+  { id: 'rex-the-stalk',        label: 'Rex: The Stalk',         emoji: '😤', cat: 'dino', file: 'trex-the-stalk.mp3' },
+
+  // Rex takes damage
+  { id: 'rex-takes-a-hit',      label: 'Rex: Takes a Hit',       emoji: '💥', cat: 'dino', file: 'trex-takes-a-hit.mp3' },
+  { id: 'rex-feels-the-sting',  label: 'Rex: Feels the Sting',   emoji: '💥', cat: 'dino', file: 'trex-feels-the-sting.mp3' },
+
+  // Bonus big sounds
+  { id: 'rex-full-rampage',     label: 'Rex: Full Rampage',      emoji: '🔥', cat: 'dino', file: 'trex-full-rampage.mp3' },
+  { id: 'rex-loudest-roar',     label: 'Rex: LOUDEST ROAR',      emoji: '📢', cat: 'dino', file: 'trex-loudest-roar.mp3' },
+  { id: 'rex-cgi-classic',      label: 'Rex: CGI Classic',       emoji: '🎬', cat: 'dino', file: 'trex-cgi-classic.mp3' },
 ];
 
 // ── State ──────────────────────────────────────────────────────────────────
