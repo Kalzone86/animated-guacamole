@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Dino Sounds">
+  <meta name="theme-color" content="#0a1f0a">
+  <title>Jurassic Soundboard</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo-area">
+      <span class="dino-icon">🦕</span>
+      <div class="title-group">
+        <h1>JURASSIC</h1>
+        <h2>SOUNDBOARD</h2>
+      </div>
+      <span class="dino-icon flip">🦖</span>
+    </div>
+  </header>
+
+  <main>
+    <div id="sound-grid" class="sound-grid">
+      <!-- Buttons injected by JS -->
+    </div>
+  </main>
+
+  <div id="ripple-container"></div>
+
+  <script src="app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js').catch(() => {});
+    }
+  </script>
+</body>
+</html>
