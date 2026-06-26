@@ -14,8 +14,6 @@ const SOUNDS = [
   { id: 'brachi-call',     label: 'Brachiosaurus',         emoji: '🦕', cat: 'dino',    file: 'brachiosaurus.mp3',       slug: 'brachiosaurus-call-jurassic-park' },
   { id: 'diloph-spit',     label: 'Dilophosaurus Spit',   emoji: '🐊', cat: 'dino',    file: 'dilophosaurus-spit.mp3',  slug: 'dilophosaurus-spit' },
   { id: 'diloph-call',     label: 'Dilophosaurus Call',   emoji: '🐊', cat: 'dino',    file: 'dilophosaurus-call.mp3',  slug: 'dilophosaurus' },
-  { id: 'triceratops',     label: 'Triceratops',           emoji: '🦏', cat: 'dino',    file: 'triceratops.mp3',         slug: 'triceratops-sound' },
-  { id: 'dino-footsteps',  label: 'T-Rex Footsteps',       emoji: '👣', cat: 'dino',    file: 'trex-footsteps.mp3',      slug: 'trex-footsteps' },
 
   // Famous movie quotes
   { id: 'welcome',         label: 'Welcome to\nJurassic Park', emoji: '🌿', cat: 'quote', file: 'welcome-to-jurassic-park.mp3', slug: 'welcome-to-jurassic-park' },
@@ -33,7 +31,6 @@ const SOUNDS = [
   { id: 'jp-theme-short',  label: 'JP Theme (Fast)',       emoji: '⚡🎵', cat: 'music',  file: 'jp-theme-short.mp3',      slug: '' },
   { id: 'jp-celebration',  label: 'JP Celebration',        emoji: '🎉', cat: 'music',   file: 'jp-celebration.mp3',      slug: '' },
   { id: 'jp-theme-alt',    label: 'JP Theme (Alt)',        emoji: '🎶', cat: 'music',   file: 'jp-theme-alt.mp3',        slug: '' },
-  { id: 'flare',           label: 'T-Rex vs Raptors',      emoji: '🔥', cat: 'dino',    file: 'trex-vs-raptors.mp3',     slug: 'jurassic-park-t-rex-saves-the-day' },
   { id: 'raptor-attack',   label: 'Raptor Attack',         emoji: '🦎', cat: 'dino',    file: 'raptor-attack.mp3',          slug: '' },
   { id: 'baryonyx',        label: 'Baryonyx Roar',         emoji: '🐉', cat: 'dino',    file: 'baryonyx-roar.mp3',       slug: 'baryonyx-walkeri-roar' },
   { id: 'dino-roar',       label: 'Dino Roar',             emoji: '🦕', cat: 'dino',    file: 'dino-roar.mp3',           slug: '' },
