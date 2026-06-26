@@ -32,6 +32,7 @@ const SOUNDS = [
   { id: 'jp-theme',        label: 'JP Theme',              emoji: '🎵', cat: 'music',   file: 'jurassic-park-theme.mp3', slug: 'jurassic-park-theme-song' },
   { id: 'jp-theme-short',  label: 'JP Theme (Fast)',       emoji: '⚡🎵', cat: 'music',  file: 'jp-theme-short.mp3',      slug: '' },
   { id: 'jp-celebration',  label: 'JP Celebration',        emoji: '🎉', cat: 'music',   file: 'jp-celebration.mp3',      slug: '' },
+  { id: 'jp-theme-alt',    label: 'JP Theme (Alt)',        emoji: '🎶', cat: 'music',   file: 'jp-theme-alt.mp3',        slug: '' },
   { id: 'danger-theme',    label: 'Danger Theme',          emoji: '🎼', cat: 'music',   file: 'danger-theme.mp3',        slug: 'jurassic-park-danger-theme' },
 
   // Ambient
@@ -42,6 +43,7 @@ const SOUNDS = [
   { id: 'baryonyx',        label: 'Baryonyx Roar',         emoji: '🐉', cat: 'dino',    file: 'baryonyx-roar.mp3',       slug: 'baryonyx-walkeri-roar' },
   { id: 'dino-roar',       label: 'Dino Roar',             emoji: '🦕', cat: 'dino',    file: 'dino-roar.mp3',           slug: '' },
   { id: 'trex-roar-alt',   label: 'T-Rex Alt Roar',        emoji: '🦖', cat: 'dino',    file: 'trex-roar-alt.mp3',       slug: '' },
+  { id: 'trex-roar-3',     label: 'T-Rex Roar 3',          emoji: '🦖', cat: 'dino',    file: 'trex-roar-3.mp3',         slug: '' },
   { id: 'godzilla',        label: 'Godzilla Roar',         emoji: '👾', cat: 'dino',    file: 'godzilla-roar.mp3',       slug: '' },
 ];
 
