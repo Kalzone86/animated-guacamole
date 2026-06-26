@@ -24,7 +24,10 @@ class SoundManager: NSObject, ObservableObject {
     }
 
     private func play(sound: Sound) {
-        guard let url = Bundle.main.url(forResource: sound.filename, withExtension: "mp3") else {
+        // Files live in the "sounds" folder reference inside the bundle
+        let url = Bundle.main.url(forResource: sound.filename, withExtension: "mp3", subdirectory: "sounds")
+               ?? Bundle.main.url(forResource: sound.filename, withExtension: "mp3")
+        guard let url else {
             print("Missing sound file: \(sound.filename).mp3")
             return
         }
