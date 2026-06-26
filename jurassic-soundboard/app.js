@@ -24,6 +24,7 @@ const SOUNDS = [
   { id: 'spared-expense',  label: 'Spared No Expense',     emoji: '💰', cat: 'quote',   file: 'spared-no-expense.mp3',   slug: 'spared-no-expense' },
   { id: 'clever-girl',     label: 'Clever Girl',           emoji: '🎓', cat: 'quote',   file: 'clever-girl.mp3',         slug: 'clever-girl-jurassic-park' },
   { id: 'hammond-biz',     label: "Hammond:\nBack in Biz", emoji: '🧓', cat: 'quote',   file: 'hammond-back-in-business.mp3', slug: '' },
+  { id: 'nedry-ahahah',    label: 'Ah Ah Ah!',             emoji: '🖥️', cat: 'quote',   file: 'nedry-ah-ah-ah.mp3',      slug: '' },
   { id: 'unix-system',     label: "It's a UNIX System!",   emoji: '💾', cat: 'quote',   file: 'unix-system.mp3',         slug: 'its-a-unix-system-i-know-this' },
   { id: 'must-go-faster',  label: 'Must Go Faster',        emoji: '🏎️', cat: 'quote',   file: 'must-go-faster.mp3',      slug: 'must-go-faster-jurassic-park' },
 
@@ -37,6 +38,7 @@ const SOUNDS = [
   { id: 'jungle',          label: 'Jungle Ambience',       emoji: '🌴', cat: 'ambient', file: 'jungle-ambience.mp3',     slug: 'jungle-ambience' },
   { id: 'electric-fence',  label: 'Electric Fence',        emoji: '⚡', cat: 'ambient', file: 'electric-fence.mp3',      slug: 'electric-fence' },
   { id: 'flare',           label: 'T-Rex vs Raptors',      emoji: '🔥', cat: 'dino',    file: 'trex-vs-raptors.mp3',     slug: 'jurassic-park-t-rex-saves-the-day' },
+  { id: 'raptor-attack',   label: 'Raptor Attack',         emoji: '🦎', cat: 'dino',    file: 'raptor-attack.mp3',          slug: '' },
   { id: 'baryonyx',        label: 'Baryonyx Roar',         emoji: '🐉', cat: 'dino',    file: 'baryonyx-roar.mp3',       slug: 'baryonyx-walkeri-roar' },
   { id: 'dino-roar',       label: 'Dino Roar',             emoji: '🦕', cat: 'dino',    file: 'dino-roar.mp3',           slug: '' },
   { id: 'trex-roar-alt',   label: 'T-Rex Alt Roar',        emoji: '🦖', cat: 'dino',    file: 'trex-roar-alt.mp3',       slug: '' },
