@@ -30,6 +30,7 @@ const SOUNDS = [
   // Music
   { id: 'jp-theme',        label: 'JP Theme',              emoji: '🎵', cat: 'music',   file: 'jurassic-park-theme.mp3', slug: 'jurassic-park-theme-song' },
   { id: 'jp-theme-short',  label: 'JP Theme (Fast)',       emoji: '⚡🎵', cat: 'music',  file: 'jp-theme-short.mp3',      slug: '' },
+  { id: 'jp-celebration',  label: 'JP Celebration',        emoji: '🎉', cat: 'music',   file: 'jp-celebration.mp3',      slug: '' },
   { id: 'danger-theme',    label: 'Danger Theme',          emoji: '🎼', cat: 'music',   file: 'danger-theme.mp3',        slug: 'jurassic-park-danger-theme' },
 
   // Ambient
