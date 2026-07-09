@@ -1,0 +1,10 @@
+# Analysis-machine tooling (install via your OS package manager where noted)
+#
+# System packages (apt/brew):
+#   hcxtools        -> provides hcxpcapngtool (PCAP -> hashcat 22000)
+#   hashcat         -> offline passphrase recovery (-m 22000)
+#   aircrack-ng     -> alternative cracker / capture inspection
+#   tshark          -> optional, for capture inspection in analyze_capture.py
+#
+# Python (this file):
+scapy>=2.5.0        ; for analyze_capture.py when tshark is unavailable

@@ -1,0 +1,37 @@
+# Authorized-target allowlist
+# --------------------------------------------------------------------------
+# Copy this file to `scope.yaml` and fill it from your signed authorization.
+# The capture firmware will ONLY operate against BSSIDs listed here. A BSSID
+# that is not on this list is refused in code — this is the primary safeguard
+# that keeps you inside your rules of engagement (and, at home, on your own AP).
+#
+# Add a target only if it traces back to your authorization letter.
+# --------------------------------------------------------------------------
+
+engagement:
+  client: "EXAMPLE Corp"                 # or "Personal / own network"
+  authorization_ref: "SOW-2026-001"      # reference to the signed doc on file
+  operator: "S. Kalz"
+  # Testing is only permitted inside this window. Purely informational here,
+  # but record it so the capture log lines up with the authorization.
+  window_start: "2026-07-10T09:00:00Z"
+  window_end:   "2026-07-10T18:00:00Z"
+
+# Global switch mirroring the rules of engagement. Leave false unless the
+# client has explicitly authorized client deauthentication. When false, the
+# firmware will only do clientless PMKID capture and will never transmit a
+# deauth frame.
+allow_deauth: false
+
+# Each target must have an authorized BSSID. SSID/channel are convenience
+# fields. `notes` is for your own record-keeping.
+targets:
+  - ssid: "EXAMPLE-Corp-WiFi"
+    bssid: "AA:BB:CC:DD:EE:FF"
+    channel: 6
+    notes: "Primary corporate SSID, WPA2-PSK, in scope per SOW-2026-001"
+
+  - ssid: "MyHomeNetwork"
+    bssid: "11:22:33:44:55:66"
+    channel: 11
+    notes: "My own network - self-authorized"
