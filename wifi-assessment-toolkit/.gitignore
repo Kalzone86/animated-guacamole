@@ -17,3 +17,15 @@ __pycache__/
 
 # Keep the committed example scope.h as a reference; it is not real.
 !firmware/esp32-recon/scope.h
+
+# Real engagement logs are sensitive client data — never commit/push them.
+# Keep only the template, the README, and the helper script under version control.
+logs/*
+!logs/README.md
+!logs/new_engagement.sh
+!logs/_TEMPLATE/
+!logs/_TEMPLATE/**
+
+# Generated wordlists may contain client-derived guesses — keep them local.
+*.hc22000.cracked
+client_wordlist*.txt

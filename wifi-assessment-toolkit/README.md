@@ -29,19 +29,29 @@ engagement, and for home use it keeps you on your own gear.
 
 Before you touch a single frame, complete `docs/engagement-checklist.md`.
 
+## Start here
+
+**[`TOOLS.md`](TOOLS.md) is the catalog** — a readable card for every tool
+(what it does, when to use it, what it needs, safety notes). Read a tool's card
+before running it.
+
 ## Layout
 
 | Path | What it is |
 |------|------------|
+| **`TOOLS.md`** | **Catalog: a description of every tool, read before use** |
 | `docs/legal-and-scope.md` | Authorization requirements, what "in scope" means, record-keeping |
 | `docs/engagement-checklist.md` | Pre-engagement checklist to complete and keep with the engagement file |
 | `docs/methodology.md` | The assessment method: recon → capture → analysis → report |
 | `docs/hardware-setup.md` | Flipper + Momentum + ESP32 devboard, and the C5 Max touch unit |
 | `config/scope.example.yaml` | The authorized-target allowlist. Copy to `scope.yaml` and fill in |
-| `firmware/esp32-recon/` | ESP32 Arduino firmware: scan + scoped PMKID/handshake capture to SD |
+| `config/scope_gen.py` | Compiles `scope.yaml` into the firmware's `scope.h` |
+| `firmware/esp32-recon/` | Scan + scoped PMKID/handshake capture to SD |
+| `firmware/esp32-monitor/` | Passive blue-team monitor: posture, deauth + evil-twin detection, probes |
 | `firmware/flipper-momentum/` | Using the Flipper + Momentum + Marauder path |
 | `touchui/c5max/` | LVGL touchscreen UI for the C5 Max ESP32 unit |
-| `analysis/` | Convert captures and crack **your own** network; report template |
+| `analysis/` | Inspect captures, crack, generate reports, package deliverables |
+| `logs/` | Per-engagement evidence store (kept local; structured for client handoff) |
 
 ## The decryption question
 

@@ -247,6 +247,20 @@ static void start_capture(Mode m) {
 }
 
 // ---- Scan -------------------------------------------------------------------
+static const char* enc_name(wifi_auth_mode_t m) {
+  switch (m) {
+    case WIFI_AUTH_OPEN:            return "OPEN";
+    case WIFI_AUTH_WEP:             return "WEP";
+    case WIFI_AUTH_WPA_PSK:         return "WPA";
+    case WIFI_AUTH_WPA2_PSK:        return "WPA2";
+    case WIFI_AUTH_WPA_WPA2_PSK:    return "WPA2/WPA";
+    case WIFI_AUTH_WPA2_ENTERPRISE: return "ENTERPRISE";
+    case WIFI_AUTH_WPA3_PSK:        return "WPA3";
+    case WIFI_AUTH_WPA2_WPA3_PSK:   return "WPA3-TRANS";
+    default:                        return "?";
+  }
+}
+
 static void do_scan() {
   logline("[*] Scanning (passive recon)...");
   int n = WiFi.scanNetworks(false, true);
@@ -257,6 +271,7 @@ static void do_scan() {
       if (mac_eq(WiFi.BSSID(i), SCOPE_TARGETS[j].bssid)) in_scope = true;
     logline("  " + WiFi.BSSIDstr(i) + "  ch" + String(WiFi.channel(i)) +
             "  " + String(WiFi.RSSI(i)) + "dBm  " +
+            String(enc_name(WiFi.encryptionType(i))) + "  " +
             (in_scope ? "[IN SCOPE] " : "           ") + WiFi.SSID(i));
   }
   WiFi.scanDelete();
