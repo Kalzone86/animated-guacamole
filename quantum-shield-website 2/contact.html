@@ -88,7 +88,7 @@
             <ul style="list-style: none;">
               <li style="padding: 0.4rem 0 0.4rem 1.5rem; position: relative; color: var(--text-secondary);">
                 <span style="position: absolute; left: 0; color: var(--accent);">&#9656;</span>
-                Your required CMMC level (1, 2, or 3)
+                Your required CMMC level (1 or 2)
               </li>
               <li style="padding: 0.4rem 0 0.4rem 1.5rem; position: relative; color: var(--text-secondary);">
                 <span style="position: absolute; left: 0; color: var(--accent);">&#9656;</span>
@@ -128,27 +128,18 @@
               <input type="tel" id="phone" name="phone">
             </div>
             <div class="form-group">
-              <label for="level">Target CMMC Level</label>
-              <select id="level" name="level">
-                <option value="">Not sure yet</option>
-                <option value="1">Level 1 &mdash; Foundational</option>
-                <option value="2">Level 2 &mdash; Advanced</option>
-                <option value="3">Level 3 &mdash; Expert</option>
-              </select>
-            </div>
-            <div class="form-group">
               <label for="service">Service of Interest</label>
               <select id="service" name="service">
                 <option value="">Select a service</option>
-                <option value="gap">Gap Assessment</option>
-                <option value="ssp">SSP Authoring</option>
-                <option value="poam">POA&amp;M Development</option>
-                <option value="policy">Policy Development</option>
-                <option value="mock">Pre-Assessment Mock</option>
-                <option value="retainer">Advisory Retainer</option>
-                <option value="hourly">Hourly Consulting</option>
-                <option value="osint-single">OSINT Assessment &mdash; Single</option>
-                <option value="osint-retainer">OSINT Assessment &mdash; Quarterly Retainer</option>
+                <option value="gap">CMMC Readiness &amp; Gap Assessment</option>
+                <option value="ssp">System Security Plan (SSP) Authoring</option>
+                <option value="poam">POA&amp;M Development &amp; Management</option>
+                <option value="policy">Policy Development &amp; Control Implementation</option>
+                <option value="mock">Pre-Assessment Mock Engagement</option>
+                <option value="retainer">Advisory Retainer / Fractional Compliance Officer</option>
+                <option value="hourly">Hourly Advisory &amp; Targeted Consulting</option>
+                <option value="osint-single">One-Time OSINT Assessment</option>
+                <option value="osint-retainer">OSINT Quarterly Monitoring Retainer</option>
                 <option value="other">Other / Not Sure</option>
               </select>
             </div>
@@ -201,6 +192,11 @@
 </footer>
 
 <script>
+// Formspree delivery endpoint. Replace YOUR_FORMSPREE_ID with the form ID from
+// formspree.io (New Form -> the ID at the end of the endpoint it gives you).
+// Until a real ID is set here, every submission will fail with the error below.
+const FORM_ENDPOINT = 'https://formspree.io/f/YOUR_FORMSPREE_ID';
+
 async function handleSubmit(e) {
   e.preventDefault();
   const form   = e.target;
@@ -212,7 +208,7 @@ async function handleSubmit(e) {
   btn.textContent = 'Sending…';
 
   try {
-    const res = await fetch('https://formspree.io/f/YOUR_FORMSPREE_ID', {
+    const res = await fetch(FORM_ENDPOINT, {
       method: 'POST',
       body: new FormData(form),
       headers: { 'Accept': 'application/json' }
@@ -221,7 +217,7 @@ async function handleSubmit(e) {
     if (res.ok) {
       status.style.display = 'block';
       status.style.color = 'var(--accent)';
-      status.textContent = "Message sent &mdash; we'll be in touch within one business day.";
+      status.textContent = "Message sent — we'll be in touch within one business day.";
       form.reset();
     } else {
       const data = await res.json();
