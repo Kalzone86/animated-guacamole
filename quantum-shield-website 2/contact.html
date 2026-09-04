@@ -238,8 +238,9 @@ async function handleSubmit(e) {
   } catch (err) {
     status.style.display = 'block';
     status.style.color = '#ff6b6b';
-    status.textContent = 'Something went wrong: ' + err.message + ' — please try again or call (830) 510-3018.';
-    console.error(err);
+    status.textContent = 'Something went wrong. Please try again or call (830) 510-3018.';
+    // Full reason stays in the console for debugging without exposing it to visitors.
+    console.error('Contact form submission failed:', err);
   } finally {
     btn.disabled = false;
     btn.textContent = 'Send Message';
