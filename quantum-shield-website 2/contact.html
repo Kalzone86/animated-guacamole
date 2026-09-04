@@ -221,14 +221,24 @@ async function handleSubmit(e) {
       status.textContent = "Message sent — we'll be in touch within one business day.";
       form.reset();
     } else {
-      const data = await res.json();
-      const msg = data.errors?.map(err => err.message).join(', ') || 'Submission failed.';
-      throw new Error(msg);
+      // Surface why the delivery service rejected it rather than a generic failure.
+      let detail = 'HTTP ' + res.status;
+      try {
+        const data = await res.json();
+        if (Array.isArray(data.errors) && data.errors.length) {
+          detail = data.errors.map(err => err.message).join(', ');
+        } else if (data.error) {
+          detail = data.error;
+        }
+      } catch (parseErr) {
+        // Response body was not JSON; the status code is all we have.
+      }
+      throw new Error(detail);
     }
   } catch (err) {
     status.style.display = 'block';
     status.style.color = '#ff6b6b';
-    status.textContent = 'Something went wrong. Please try again or call (830) 510-3018.';
+    status.textContent = 'Something went wrong: ' + err.message + ' — please try again or call (830) 510-3018.';
     console.error(err);
   } finally {
     btn.disabled = false;
