@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What Is a System Security Plan (SSP) for CMMC? — Quantum Shield</title>
+<meta name="description" content="What a CMMC System Security Plan (SSP) must include for Level 2, how C3PAO assessors use it, how it differs from a POA&amp;M, and common mistakes to avoid.">
+<link rel="canonical" href="https://quantum-shield-consulting.com/cmmc-ssp">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Quantum Shield Consulting">
+<meta property="og:title" content="What Is a System Security Plan (SSP) for CMMC? — Quantum Shield">
+<meta property="og:description" content="What a CMMC System Security Plan (SSP) must include for Level 2, how C3PAO assessors use it, how it differs from a POA&amp;M, and common mistakes to avoid.">
+<meta property="og:url" content="https://quantum-shield-consulting.com/cmmc-ssp">
+<meta property="og:image" content="https://quantum-shield-consulting.com/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://quantum-shield-consulting.com/assets/og-image.jpg">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=2">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"What is a <span style=\"color: var(--accent);\">System Security Plan</span> (SSP) for CMMC?","description":"What a CMMC System Security Plan (SSP) must include for Level 2, how C3PAO assessors use it, how it differs from a POA&M, and common mistakes to avoid.","datePublished":"2026-11-04","dateModified":"2026-11-04","image":"https://quantum-shield-consulting.com/assets/og-image.jpg","author":{"@type":"Organization","name":"Quantum Shield Consulting","url":"https://quantum-shield-consulting.com/"},"publisher":{"@type":"Organization","name":"Quantum Shield Consulting","logo":{"@type":"ImageObject","url":"https://quantum-shield-consulting.com/assets/logo.png"}},"mainEntityOfPage":"https://quantum-shield-consulting.com/cmmc-ssp"}</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-container">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.png" alt="Quantum Shield Consulting" class="brand-logo">
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.getElementById('nav-menu').classList.toggle('open')">&#9776;</button>
+    <nav>
+      <ul id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="osint.html">OSINT</a></li>
+        <li><a href="cmmc-guides.html" class="active">Guides</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="about-hero">
+    <div class="container">
+      <span class="eyebrow fade-up">CMMC Guide</span>
+      <h1 class="fade-up delay-1" style="max-width: 900px;">What is a <span style="color: var(--accent);">System Security Plan</span> (SSP) for CMMC?</h1>
+      <p class="fade-up delay-2" style="max-width: 720px; margin-top: 1.5rem; font-size: 1.15rem;">What goes in an SSP, how assessors use it, and how to avoid the most common mistakes.</p>
+    </div>
+  </section>
+
+  <section style="padding-top: 1rem;">
+    <div class="container">
+      <article class="guide">
+        <div class="guide-callout">
+          <strong>Quick answer:</strong> A System Security Plan (SSP) is the document that describes your CUI environment and explains <strong>how you meet each of the 110 NIST SP 800-171 requirements</strong>. It's required for CMMC Level 2, and it's the first thing an assessor will review.
+        </div>
+
+        <h2>Where the requirement comes from</h2>
+        <p>NIST SP 800-171 requirement 3.12.4 (CA.L2-3.12.4 in CMMC) requires you to develop, document and periodically update a system security plan that describes your system boundaries, environments of operation, how security requirements are implemented, and the relationships with or connections to other systems.</p>
+
+        <h2>What a strong SSP includes</h2>
+        <ul>
+          <li><strong>Scope and boundary.</strong> What's in and out of the assessment, with a network or data-flow diagram showing where CUI is stored, processed and transmitted.</li>
+          <li><strong>Asset inventory by CMMC category.</strong> CUI assets, Security Protection Assets, Contractor Risk Managed Assets, Specialized Assets, and out-of-scope assets.</li>
+          <li><strong>Environment description.</strong> Locations, on-premises systems, cloud services and external service providers.</li>
+          <li><strong>An implementation statement for every requirement.</strong> Specific, verifiable descriptions of what you actually do, who does it and which tools you use, not a restatement of the requirement.</li>
+          <li><strong>Shared and inherited responsibilities.</strong> Which controls your cloud or managed service providers cover, backed by their customer responsibility matrix.</li>
+          <li><strong>Roles and connections.</strong> Who is responsible for security, and how the in-scope system connects to other systems.</li>
+          <li><strong>Version history.</strong> When the plan was reviewed and updated.</li>
+        </ul>
+
+        <h2>SSP vs. POA&amp;M</h2>
+        <p>The SSP describes how requirements are met today. A Plan of Action and Milestones (POA&amp;M, requirement 3.12.2) lists the requirements that aren't met yet and how and when you'll fix them. Under CMMC, a POA&amp;M is allowed only in limited cases at Level 2, so the goal is a plan with as few open items as possible.</p>
+
+        <h2>Common SSP mistakes</h2>
+        <ul>
+          <li><strong>Template copy-and-paste.</strong> Generic language that doesn't match how your company actually operates.</li>
+          <li><strong>A plan that doesn't match reality.</strong> Assessors compare the SSP against interviews, configurations and evidence. Discrepancies cause findings.</li>
+          <li><strong>No clear boundary.</strong> A vague scope makes everything in the company look in scope.</li>
+          <li><strong>Missing provider responsibilities.</strong> Assuming a cloud provider covers a control without documenting it.</li>
+          <li><strong>Written once, never updated.</strong> The SSP must change when your systems change.</li>
+        </ul>
+
+        <h2>How assessors use your SSP</h2>
+        <p>During a Level 2 certification assessment, the C3PAO uses the SSP to understand your environment, confirm the scope, and plan which evidence to examine and whom to interview. A clear, accurate SSP makes the assessment faster and reduces surprises.</p>
+
+        <h2>Getting it done</h2>
+        <p>An SSP is easiest to write after a gap assessment, when you know exactly what's in place. Quantum Shield Consulting offers <a href="services.html">SSP authoring</a> as part of CMMC readiness engagements. See also: <a href="cmmc-levels.html">which CMMC level you need</a> and <a href="cmmc-timeline.html">key CMMC dates</a>.</p>
+      <p class="guide-note">This guide is general information based on the CMMC Program rule (32 CFR Part 170) and the DFARS CMMC clause (DFARS 252.204-7021) as of November 2026. It isn't legal advice. The requirements in your solicitation or contract always govern. Last reviewed: November 4, 2026.</p>
+      <div class="guide-related">
+        <h2>More CMMC guides</h2>
+        <ul>
+          <li><a href="cmmc-levels.html">CMMC 2.0 Levels Explained: Level 1 vs. Level 2 vs. Level 3</a></li>
+          <li><a href="cmmc-timeline.html">CMMC Timeline: What Phase 2 (November 10, 2026) Means for You</a></li>
+        </ul>
+      </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container" style="text-align: center;">
+      <h2>Not sure where you stand?</h2>
+      <p style="max-width: 640px; margin: 1rem auto 2rem;">Start with a readiness and gap assessment. We'll map your scope, compare your environment against the requirements, and give you a prioritized plan.</p>
+      <a href="contact.html" class="btn btn-primary">Schedule a Consultation</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <img src="assets/logo.png" alt="Quantum Shield Consulting" class="footer-logo">
+        </a>
+        <p>Registered Practitioner advisory services for CMMC 2.0 readiness, Defense Industrial Base compliance, and Executive OSINT assessments.</p>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="osint.html">OSINT</a></li>
+          <li><a href="cmmc-guides.html">CMMC Guides</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+18305103018">(830) 510-3018</a></li>
+          <li><a href="contact.html">Request Consultation</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Quantum Shield Consulting &nbsp;&middot;&nbsp; All Rights Reserved
+    </div>
+    <div class="site-credit">Website by <a href="https://tripleridgelabs.com/" rel="noopener">Triple Ridge Labs</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
