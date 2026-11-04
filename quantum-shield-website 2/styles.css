@@ -892,3 +892,38 @@ section { padding: 5rem 0; }
 .fade-up.delay-1 { animation-delay: 0.15s; }
 .fade-up.delay-2 { animation-delay: 0.3s; }
 .fade-up.delay-3 { animation-delay: 0.45s; }
+
+/* ---------- CMMC guides (added Nov 2026) ---------- */
+.guide { max-width: 800px; margin: 0 auto; font-size: 1.12rem; line-height: 1.75; color: var(--text-secondary); }
+.guide h2 { font-family: var(--font-display); font-size: 1.45rem; color: var(--text-primary); margin: 2.4rem 0 .8rem; letter-spacing: .02em; }
+.guide h3 { color: var(--text-primary); }
+.guide p { margin: 0 0 1rem; }
+.guide ul, .guide ol { margin: 0 0 1.25rem; padding-left: 1.3rem; }
+.guide li { margin-bottom: .55rem; }
+.guide strong { color: var(--text-primary); }
+.guide a { color: var(--accent); }
+.guide-callout { margin: 0 0 2rem; padding: 1.25rem 1.4rem; background: var(--bg-panel); border: 1px solid var(--border-strong); border-left: 4px solid var(--accent); border-radius: var(--radius); box-shadow: var(--shadow-glow); }
+.guide-table-wrap { overflow-x: auto; margin: 0 0 1rem; border: 1px solid var(--border-subtle); border-radius: var(--radius); }
+.guide-table { width: 100%; border-collapse: collapse; min-width: 560px; font-size: 1rem; }
+.guide-table th, .guide-table td { text-align: left; padding: .7rem .9rem; border-bottom: 1px solid var(--border-subtle); }
+.guide-table th { font-family: var(--font-mono); font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); background: rgba(94, 227, 255, .05); }
+.guide-table td:first-child { color: var(--text-primary); font-weight: 600; white-space: nowrap; }
+.guide-timeline { display: grid; gap: .9rem; margin: 0 0 1.25rem; }
+.guide-step { padding: 1rem 1.2rem; background: var(--bg-panel); border: 1px solid var(--border-subtle); border-radius: var(--radius); }
+.guide-step.is-next { border-color: var(--accent); box-shadow: 0 0 30px rgba(94, 227, 255, .12); }
+.guide-step h3 { margin: .2rem 0 .3rem; font-size: 1.15rem; }
+.guide-step p { margin: 0; }
+.guide-date { font-family: var(--font-mono); font-size: .85rem; color: var(--accent); letter-spacing: .06em; }
+@media (min-width: 760px) { .guide-timeline { grid-template-columns: repeat(2, 1fr); } }
+.guide-note { margin-top: 2.5rem; padding-top: 1.2rem; border-top: 1px solid var(--border-subtle); font-size: .92rem; color: var(--text-muted); }
+.guide-related { margin-top: 2rem; padding: 1.25rem 1.4rem; background: var(--bg-panel); border: 1px solid var(--border-subtle); border-radius: var(--radius); }
+.guide-related h2 { margin-top: 0; font-size: 1.1rem; }
+.guide-related ul { margin: 0; }
+.guide-cards { margin-bottom: 1rem; }
+.guide-card { display: flex; flex-direction: column; text-decoration: none; color: inherit; transition: border-color .2s, transform .2s; }
+.guide-card:hover { transform: translateY(-3px); border-color: var(--accent); }
+.guide-card h3 { margin: .6rem 0 .5rem; }
+.guide-more { margin-top: auto; padding-top: 1rem; color: var(--accent); font-family: var(--font-mono); font-size: .85rem; }
+.site-credit { margin-top: .6rem; text-align: center; font-size: .85rem; color: var(--text-muted); }
+.site-credit a { color: var(--text-secondary); }
+.site-credit a:hover { color: var(--accent); }
