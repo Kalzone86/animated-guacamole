@@ -1,0 +1,31 @@
+# Never commit real engagement scope or captured client data.
+config/scope.yaml
+firmware/esp32-recon/scope.h
+touchui/c5max/scope.h
+
+# Captures and cracking artifacts are sensitive client data.
+*.pcap
+*.pcapng
+*.hc22000
+*.hccapx
+*.cap
+capture.log
+
+# Build / cache
+__pycache__/
+*.pyc
+
+# Keep the committed example scope.h as a reference; it is not real.
+!firmware/esp32-recon/scope.h
+
+# Real engagement logs are sensitive client data — never commit/push them.
+# Keep only the template, the README, and the helper script under version control.
+logs/*
+!logs/README.md
+!logs/new_engagement.sh
+!logs/_TEMPLATE/
+!logs/_TEMPLATE/**
+
+# Generated wordlists may contain client-derived guesses — keep them local.
+*.hc22000.cracked
+client_wordlist*.txt
